@@ -178,13 +178,6 @@ This gem uses Slack OpenID Connect endpoints:
 - `https://slack.com/api/openid.connect.userInfo`
 - `https://slack.com/openid/connect/keys` (JWKS for id_token verification)
 
-## Smoke Variants
-
-After a baseline smoke succeeds, run these extra request-phase variants:
-
-- `?team=T0123ABC456` (pre-select workspace)
-- compat alias flow using `/auth/slack` and `/auth/slack/callback`
-
 ## Test Structure
 
 - `test/omniauth_slack2_test.rb`: strategy/unit behavior
